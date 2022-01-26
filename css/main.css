@@ -95,9 +95,48 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Zoe's custom styles
    ========================================================================== */
+body {
+  padding: 1em;
+  margin: 1em;
+}
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: purple;
+  font-size: 3em;
+}
+
+h2 {
+  color: darkmagenta;
+  font-size: 2em;
+}
+
+p {
+  color: darkcyan;
+  font-size: 1.5em;
+}
+
+button {
+  background-color: pink;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+
+#excuse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10em;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
