@@ -97,46 +97,113 @@ textarea {
 /* ==========================================================================
    Zoe's custom styles
    ========================================================================== */
+/* ------ BASE STYLES ------ */
+
 body {
-  padding: 1em;
-  margin: 1em;
+    background: linear-gradient(132deg, #d16ba5, #86a8e7, #5ffbf1);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
 }
 
-h1{
-  color: purple;
+
+h1 {
+  color: darkblue;
   font-size: 3em;
+  font-family: cursive;
+  padding: 1em;
+  text-align: center;
 }
 
 h2 {
-  color: darkmagenta;
-  font-size: 2em;
+  color: darkblue;
+  font-size: 1.6em;
+  padding: 1em;
+  text-align: center;
+}
+
+h3 {
+  color: teal;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  text-align: center;
 }
 
 p {
-  color: darkcyan;
-  font-size: 1.5em;
+  color: darkmagenta;
+  font-size: 1.3em;
+  padding: 1em;
+  text-align: center;
 }
 
 button {
-  background-color: pink;
+  background: lavenderblush;
   border-radius: 10px;
+  color: darkslateblue;
+  padding: 1em;
+}
+
+button:hover {
+  background: floralwhite;
+  color: darkviolet;
+}
+
+/* ------ Excuse Area Styles ------*/
+.excuse-area {
+  background: rgba( 247, 207, 230, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  display: flex;
+  flex-direction: column;
+  justify-content: safe start;
+  align-items: center;
+  margin: 1em;
+  padding: 1em;
+}
+
+/* ------ Excuse box Styles ------*/
+.excuse-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: safe start;
+  align-items: center;
   padding: 0.5em;
 }
 
 #excuse {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 10em;
+  justify-content: safe start;
 }
+
+.button {
+  display: flex;
+  flex-flow: column;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
